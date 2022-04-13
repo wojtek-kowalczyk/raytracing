@@ -1,5 +1,5 @@
 # List your *.h files here:
-headers = 
+headers =
 
 # List your *.cpp files here:
 sources = main.cpp
