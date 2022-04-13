@@ -12,6 +12,7 @@ int main() {
     // row-wise left->right then top->bottom
     for (int j = height-1; j >= 0; --j)
     {
+        std::cerr << "Scanlines remaining: " << j << '\n'; // progress tracker
         for (int i = 0; i < width; ++i)
         {
             double r = static_cast<double>(i) / (width-1);
@@ -26,4 +27,5 @@ int main() {
             // run with: ./rt > file.ppm to save to file
         }
     }
+    std::cerr << "Done.\n";
 }
